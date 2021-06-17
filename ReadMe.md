@@ -1,5 +1,5 @@
 # Parking Facility Performance Prediction Using Multi-Target Conformal Regression
-** Mateusz Wiza **
+* Mateusz Wiza *
 
 ## Included files:
 
@@ -19,6 +19,7 @@ conformal regression with a multi-target regression model; Additional
 dependency: nonconformist package modified to support multi-target underlying
 models (not included); All other dependencies are given in  requirements.txt; 
 Original data set not provided due to confidentiality. 
+
 Contents:
  - Data Preparation
  - Experiment to determine the best performing underlying multi-target model
@@ -31,6 +32,7 @@ algorithm (not included): https://github.com/M-Soundouss/CopulaConformalMTR/blob
 modified by replacing the underlying and normalizing models; Results are stored in
 JSON files (in 'graph-data/copulas' folder); All dependencies are given in 
 requirements.txt;
+
 Contents:
  - Hyper-rectangle volume and validity visualization for optimal solution
  - Target-wise prediction interval width visualization for optimal solution
