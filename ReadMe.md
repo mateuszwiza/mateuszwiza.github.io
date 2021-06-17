@@ -1,5 +1,5 @@
 # Parking Facility Performance Prediction Using Multi-Target Conformal Regression
-* Mateusz Wiza *
+**Mateusz Wiza**
 
 ## Included files:
 
