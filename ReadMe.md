@@ -5,7 +5,8 @@
 
 1. baseline.py - Script for applying single-target conformal regression 
 with a single-targetregression model; All dependencies are given in 
-requirements.txt; Original data set not provided due to confidentiality.\\
+requirements.txt; Original data set not provided due to confidentiality.
+
 Contents:
  - Data Preparation
  - Experiment to determine the best performing underlying model
