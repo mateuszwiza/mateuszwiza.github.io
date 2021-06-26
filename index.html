@@ -1,8 +1,253 @@
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <title>Mateusz Wiza - Personal Page</title>
 </head>
 <body>
-    <p>Hello World!</p>
+    <div id="header">
+        <div id="header-menu">
+            <div class="hm-item"><a href='docs/Mateusz_Wiza_-_Data_Scientist.pdf'>DOWNLOAD CV</a></div>
+            <div class="hm-item"><a href='contact.html'>CONTACT</a></div>
+            <div id="hm-item-last"></div>
+        </div>
+        <img src="media/profile.jpeg" id="profile-img"/>
+        <div id="header-content">
+            <div id="name">MATEUSZ WIZA</div>
+            <div id="prof">Data Scientist</div>
+            <div id="icons">
+                <a href="https://www.linkedin.com/in/mateusz-wiza/" target="blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mateuszwiza" target="blank"><i class="fab fa-github"></i></a>
+                <a href="https://mateuszwiza.medium.com/" target="blank"><i class="fab fa-medium-m"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        
+        <div class="section">
+            <div class="section-title">INTRODUCTION</div><br>
+            <p>
+                Experienced data scientist and project manager with a background in software engineering, web development, aviation, 
+                events management, informal education, journalism and politics. I specialize in general machine learning, reliable prediction, data fusion,  and statistical analysis. 
+                I research multi-output conformal regression with applications in the mobility industry, and I'm active in several NGOs.
+            </br></br>
+                I graduated with honours from Bachelor of Data Science and Artificial Intelligence at Maastricht University (the Netherlands). 
+                Currently, I'm a Master student of International Air Transport System Engineering and Design at ENAC (Toulouse, France).
+            
+            </p>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">PORTFOLIO</div><br>
+
+            <!--THESIS-->
+            <div class="project">
+                <div class="project-img"><img src="media/thesis.png"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Parking Facility Performance Prediction Using Multi-Output Conformal Regression</div>
+                        <div class="project-desc">
+                            <p>
+                                My Bachelor Thesis research from Maastricht Unviersity aiming to improve the accuracy of the acquisition processes
+                                at Q-Park. The thesis investigates different single- and multi-target regression algorithms and implements them
+                                in combination with conformal prediction framework that provides statistically valid guarantees on the results 
+                                in form of prediction intervals.
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>RESEARCH | REGRESSION | CONFORMAL PREDICTION | RELIABLE PREDICTION | MACHINE LEARNING</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="paper.html"><p><i class="far fa-file"></i></i> Paper</p></a>
+                        <a href="https://github.com/mateuszwiza/mtcp" target="blank"><p><i class="fab fa-github"></i> Code</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--WEATHER-->
+            <div class="project">
+                <div class="project-img"><img src="media/weather.jpeg"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Investigating Impact of Weather on Customer Behavior</div>
+                        <div class="project-desc">
+                            <p>
+                                In this project for Q-Park, I used historical weather data and transformed them using a little-known,
+                                yet very powerful method called Weather Rating. Then comparing the weather rating for respective days
+                                with transaction volumes at car parks, I proved that there is a tring correlation between weather and
+                                parking behaviour and hence between weather and mobility.
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>DATA FUSION | DATA ENGINEERING | PYTHON | ANALYTICS</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mateuszwiza.medium.com/investigating-impact-of-weather-on-customer-behavior-7160dd531cf" target="blank"><p><i class="fab fa-medium-m"></i> Article</p></a>
+                        <a href="https://github.com/mateuszwiza/weather-rating" target="blank"><p><i class="fab fa-github"></i> Code</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--COVID CLUSTERING-->
+            <div class="project">
+                <div class="project-img"><img src="media/project_covid.jpg"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Clustering based on Parking Transaction Patterns during COVID Lockdown</div>
+                        <div class="project-desc">
+                            <p>
+                                A project I prepared for Q-Park with the goal of determining key revenue drivers of parking facilities
+                                based on the transaction patterns during COVID lockdowns and using k-means clustering. The method has successfully 
+                                solved the given task and provided interesting insights into people's behaviour and how it changed during and right
+                                after the COVID lockdowns.
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>DATA ENGINEERING | PYTHON | CLUSTERING | MACHINE LEARNING</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mateuszwiza.medium.com/clustering-based-on-transaction-patterns-during-covid-lockdown-f14ecbec9d39" target="blank"><p><i class="fab fa-medium-m"></i> Article</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--COMPETITORS DASHBOARD-->
+            <div class="project">
+                <div class="project-img"><img src="media/cd.jpg"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Interactive Dashboard for Competitors API Results</div>
+                        <div class="project-desc">
+                            <p>
+                                An advanced dashboard that I prepared for Q-Park to present data from Parkopedia API. It is built as a web
+                                application, using Flask library. The application uses Python for backend to acquire and process the data, and 
+                                HTML, CSS and JavaScript for frontend (design, responsiveness, filtering). The dashboard is extensively used by
+                                multiple teams within Q-Park.
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>DASHBOARD | API | VIZUALIZATION | PYTHON | FLASK | JAVASCRIPT</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="cd.html"><p><i class="fas fa-info-circle"></i> Details</p></a>
+                        <a href="https://github.com/mateuszwiza/competitors-dashboard-os" target="blank"><p><i class="fab fa-github"></i> Code</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--IVP-->
+            <div class="project">
+                <div class="project-img"><img src="media/ivp_cover.jpg"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Image and Video Processing</div>
+                        <div class="project-desc">
+                            <p>
+                                A collection of 4 projects I completed for a university course. The projects concern topics such as 
+                                spacial filtering, geometric transformations, frequency filtering, Fourier Transform, noise removal,
+                                image restoration, data compression, morphological processing, binarization, and Motion Enegry Images (MEI).
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>IMAGE PROCESSING | VIDEO PROCESSING | PYTHON | OPENCV | MATLAB</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="ivp.html"><p><i class="far fa-file"></i></i> Reports</p></a>
+                        <a href="https://github.com/mateuszwiza/image-processing-medley" target="blank"><p><i class="fab fa-github"></i> Code</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--SCHOOLS-->
+            <div class="project">
+                <div class="project-img"><img src="media/schools.png"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Data Acquisition: All High Schools in Belgium</div>
+                        <div class="project-desc">
+                            <p>
+                                A project for NGO of the European Youth Parliament Belgium ot improve its outreach to educational stakeholders.
+                                The goal was to create a database with contact information to all secondary schools in Belgium. The solution required
+                                a separate solution for each region in the country and, in some cases, web scraping using Selenium script.
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>PYTHON | SELENIUM | WEB SCRAPPING | DATA ACQUISITION</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mateuszwiza.medium.com/data-acquisition-all-high-schools-in-belgium-568be85504b3" target="blank"><p><i class="fab fa-medium-m"></i> Article</p></a>
+                        <a href="https://github.com/mateuszwiza/schools-scrapping" target="blank"><p><i class="fab fa-github"></i> Code</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--OSM-->
+            <div class="project">
+                <div class="project-img"><img src="media/osm.png"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Counting the Number of Buildings in an Area by Category using OpenStreetMap API</div>
+                        <div class="project-desc">
+                            <p>
+                                Acquiring data about land use for many locations in Europe is something I used extensively when preparing models
+                                for Q-Park. One of the more important data sources was OpenStreetMap. The article I wrote explains how to count 
+                                the number of buildings and places by category in various locations. The key issue I needed to solve were the inconsistencies
+                                in location tagging - the result of OpenStreetMap being a community-based project.
+                                
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>DATA ENGINEERING | DATA FUSION | API | OPENSTREETMAPS | OVERPASS TURBO</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mateuszwiza.medium.com/how-to-count-the-number-of-buildings-in-an-area-by-category-using-openstreetmap-api-7163d77289e9" target="blank"><p><i class="fab fa-medium-m"></i> Article</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--DRIVING DISTANCE-->
+            <div class="project">
+                <div class="project-img"><img src="media/driving.png"/></div>
+                <div class="project-right">
+                    <div class="project-content">
+                        <div class="project-title">Bulk Driving Distance Acquisition Using Distance Matrix API</div>
+                        <div class="project-desc">
+                            <p>
+                                A short project, in which I was given a large set of addresses and a task to obtain a driving distance between
+                                all the locations. I used the Distance Matrix API from Google Maps, Given all limitations and 
+                                caveats regarding this API, this task required a clever algorithm that turned out really interestingin the end.
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <p>DATA FUSION | API | PYTHON | GOOGLE CLOUD</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mateuszwiza.medium.com/get-driving-distance-between-multiple-points-using-google-maps-distance-matrix-api-32b6feaa0d18" target="blank"><p><i class="fab fa-medium-m"></i> Article</p></a>
+                        <a href="https://github.com/mateuszwiza/driving-distance" target="blank"><p><i class="fab fa-github"></i> Code</p></a>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
 </body>
 
 </html>
